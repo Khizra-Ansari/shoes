@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>WebGi starter</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>WebGi starter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="src/styles.css">
 </head>
 
 <body>
-	<div id="webgi-canvas-container">
-		<canvas id="webgi-canvas"></canvas>
-	</div>
+    <div id="webgi-canvas-container">
+        <canvas id="webgi-canvas"></canvas>
+    </div>
 
-	<script src="src/index.ts" type="module"></script>
+  
+    <div class="bottom-bar">
+        <div class="logo-icons">
+            <img src="./assets/3d_logo.png" alt="Logo" class="logo" />
+            <span class="icons">
+                <i id="model1" class="fas fa-ring"></i>
+                <i id="model2" class="fas fa-mobile-alt"></i>
+                <i id="model3" class="fas fa-cube"></i>
+                <i class="fas fa-bullhorn"></i>
+            </span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Diamond</a>
+            <a  href="#">Metal</a>
+            
+            <a href="src/jwellery.html" class="contact-button">Contact Us</a>
+        </div>
+    </div>
+
+
+<div id="diamond-toggle-bar" class="diamond-toggle-bar">
+    <div class="diamond-items">
+        <img src="./assets/d1-removebg-preview.png"  alt="Diamond 1" class="diamond-item" />
+        <img src="./assets/dia2-removebg-preview.png"  alt="Diamond 2" class="diamond-item" />
+        <img src="./assets/dia3-removebg-preview.png"  alt="Diamond 3" class="diamond-item" />
+        
+    </div>
+    <button id="close-toggle-bar" class="close-toggle-bar">✕</button>
+</div>
+
+
+<div id="metal-toggle-bar" class="metal-toggle-bar">
+    <div class="metal-items">
+        <img src="./assets/br1-removebg-preview.png"  alt="Metal 1" class="metal-item" />
+        <img src="./assets/br2-removebg-preview.png"  alt="Metal 2" class="metal-item" />
+        
+    </div>
+    <button id="close-toggle-bar-metal" class="close-toggle-bar">✕</button>
+</div>
+
+    <script src="src/index.ts" type="module"></script>
 </body>
-
 </html>
